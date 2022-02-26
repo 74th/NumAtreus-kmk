@@ -1,10 +1,8 @@
-# Sparrow62 v2 Keyboard KMK Firmware
+# Raspberry Pi Pico 版の NumAtreus Keyboard KMK Firmware
 
-Sparrow62 v2 の Firmware コード
+Raspberry Pi Pico 版の NumAtreus の Firmware コード
 
 keymap.py を書き換えて、自在に[キーマップ ./keymap.py](./keymap.py)を変更して楽しんで下さい。
-
-左右分割キーボードを1個の Raspberry PI Pico と MCP23017 で実現するためのトリックが [./code.py](./code.py) に入っています。
 
 ## Install
 
@@ -20,7 +18,6 @@ https://circuitpython.org/board/raspberry_pi_pico/
 
 必要な 2 つのライブラリが、submodule としてこのリポジトリに含まれています。
 
-- MCP23017 のライブラリ: https://github.com/adafruit/Adafruit_CircuitPython_MCP230xx
 - KMK Firmware: https://github.com/KMKfw/kmk_firmware
 
 libs 内にない場合、以下のコマンドを実行してチェックアウトします。
@@ -29,12 +26,11 @@ libs 内にない場合、以下のコマンドを実行してチェックアウ
 git submodule update -i
 ```
 
-Circuit Python がブートされると、CIRCUITPY という USB メモリとして認識するため、以下の 2 つのディレクトリを libs/ 内に置きます。
+Circuit Python がブートされると、CIRCUITPY という USB メモリとして認識するため、以下のディレクトリを libs/ 内に置きます。
 
-- libs/libs/Adafruit_CircuitPython_MCP230xx/adafruit_mcp230xx
 - libs/kmk_firmware/kmk
 
-### Sparrow62 用のキーマップと、初期ファイルの設置
+### Raspberry Pi Pico 版の NumAtreus 用のキーマップと、初期ファイルの設置
 
 以下の 2 つのファイルを、CIRCUITPY のルートディレクトリに置きます。
 

@@ -1,8 +1,5 @@
 {
-  "python.analysis.extraPaths": [
-    "./libs/kmk_firmware",
-    "./libs/Adafruit_CircuitPython_MCP230xx"
-  ],
+  "python.analysis.extraPaths": ["./libs/kmk_firmware"],
   "[python]": {
     "gitlens.codeLens.symbolScopes": ["!Module"],
     "editor.wordBasedSuggestions": false,
