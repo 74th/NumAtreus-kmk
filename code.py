@@ -1,6 +1,4 @@
 import board
-import busio
-import digitalio
 
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC
