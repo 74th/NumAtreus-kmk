@@ -28,7 +28,7 @@ def query_keymap():
 def lower_keymap():
     left = [
         [KC.EXLM,   KC.AT,      KC.HASH,    KC.DLR,     KC.PERC],
-        [KC.DELT,   KC.ESC,     ____,       ____,       ____],
+        [KC.DEL,    KC.ESC,     ____,       ____,       ____],
         [KC.CAPS,   KC.VOLU,    ____,       KC.ENT,     ____],
         [____,      KC.VOLD,    KC.LGUI,    KC.LSFT,    KC.SPC,     KC.BSPC],
     ]
