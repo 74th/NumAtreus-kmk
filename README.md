@@ -58,7 +58,7 @@ https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-w
 
 Press CTRL-C and CTRL-D to reboot CIRCUIT PYTHON. Check the error and fix the error. CTRL-C、CTRL-D を押すと、CIRCUIT PYTHON がリブートします。 エラー内容を確認して、その部分を修正します。
 
-## Sample keymaps サンプルキーマップ
+## Sample keymaps (サンプルキーマップ)
 
 Rename the following file keymap.py and place it in CIRCUITPY. 以下のファイルを keymap.py というファイル名に変えて CIRCUITPY の中に入れて下さい。
 
