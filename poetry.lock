@@ -1,56 +1,4 @@
 [[package]]
-name = "adafruit-blinka"
-version = "6.15.0"
-description = "CircuitPython APIs for non-CircuitPython versions of Python such as CPython on Linux and MicroPython."
-category = "main"
-optional = false
-python-versions = ">=3.6.0"
-
-[package.dependencies]
-Adafruit-PlatformDetect = ">=3.13.0"
-Adafruit-PureIO = ">=1.1.7"
-pyftdi = ">=0.40.0"
-
-[[package]]
-name = "adafruit-circuitpython-busdevice"
-version = "5.1.0"
-description = "CircuitPython bus device classes to manage bus sharing."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-Adafruit-Blinka = "*"
-
-[[package]]
-name = "adafruit-circuitpython-mcp230xx"
-version = "2.5.0"
-description = "CircuitPython library for controlling a MCP23008 or MCP23017 I2C GPIO expander."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-Adafruit-Blinka = "*"
-adafruit-circuitpython-busdevice = "*"
-
-[[package]]
-name = "adafruit-platformdetect"
-version = "3.16.0"
-description = "Platform detection for use by libraries like Adafruit-Blinka."
-category = "main"
-optional = false
-python-versions = ">=3.6.0"
-
-[[package]]
-name = "adafruit-pureio"
-version = "1.1.9"
-description = "Pure python (i.e. no native extensions) access to Linux IO    including I2C and SPI. Drop in replacement for smbus and spidev modules."
-category = "main"
-optional = false
-python-versions = ">=3.5.0"
-
-[[package]]
 name = "black"
 version = "21.9b0"
 description = "The uncompromising code formatter."
@@ -79,7 +27,7 @@ uvloop = ["uvloop (>=0.15.2)"]
 
 [[package]]
 name = "circuitpython-stubs"
-version = "2019.5.26"
+version = "7.2.0"
 description = "PEP 561 type stubs for CircuitPython"
 category = "main"
 optional = false
@@ -150,37 +98,6 @@ docs = ["Sphinx (>=4)", "furo (>=2021.7.5b38)", "proselint (>=0.10.2)", "sphinx-
 test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock (>=3.6)"]
 
 [[package]]
-name = "pyftdi"
-version = "0.53.3"
-description = "FTDI device driver (pure Python)"
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-pyserial = ">=3.0"
-pyusb = ">=1.0.0,<1.2.0 || >1.2.0"
-
-[[package]]
-name = "pyserial"
-version = "3.5"
-description = "Python Serial Port Extension"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.extras]
-cp2110 = ["hidapi"]
-
-[[package]]
-name = "pyusb"
-version = "1.2.1"
-description = "Python USB access module"
-category = "main"
-optional = false
-python-versions = ">=3.6.0"
-
-[[package]]
 name = "regex"
 version = "2021.10.8"
 description = "Alternative regular expression module, to replace re."
@@ -215,30 +132,15 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "682fd432bba1c7d5335b092d94d10f9f3fcb6bab14f4f9657ab8227efa6a2a1d"
+content-hash = "bac99608b9fbcaa3b1e6c03ab83159478ea17d2953f8f3b4b6f0accf2395d3ad"
 
 [metadata.files]
-adafruit-blinka = [
-    {file = "Adafruit-Blinka-6.15.0.tar.gz", hash = "sha256:2df80c4cbcd17a8b625e21216bfd0f05b344e20f37080c0893416085a62971d9"},
-]
-adafruit-circuitpython-busdevice = [
-    {file = "adafruit-circuitpython-busdevice-5.1.0.tar.gz", hash = "sha256:4b6c2aa355dbfaca448640dd696f4b4cfb44465883342612b95c84bfb5953f7f"},
-]
-adafruit-circuitpython-mcp230xx = [
-    {file = "adafruit-circuitpython-mcp230xx-2.5.0.tar.gz", hash = "sha256:39f6b21aa944786c3a71a045369fc810f3158490e92736021e2cdfbbd63861fa"},
-]
-adafruit-platformdetect = [
-    {file = "Adafruit-PlatformDetect-3.16.0.tar.gz", hash = "sha256:ffad1ffbe09e9956de530452cd0e5d669a101386ed4624619d51c70cf227dd77"},
-]
-adafruit-pureio = [
-    {file = "Adafruit_PureIO-1.1.9.tar.gz", hash = "sha256:2caf22fb07c7f771d83267f331a76cde314723f884a9570ea6f768730c87a879"},
-]
 black = [
     {file = "black-21.9b0-py3-none-any.whl", hash = "sha256:380f1b5da05e5a1429225676655dddb96f5ae8c75bdf91e53d798871b902a115"},
     {file = "black-21.9b0.tar.gz", hash = "sha256:7de4cfc7eb6b710de325712d40125689101d21d25283eed7e9998722cf10eb91"},
 ]
 circuitpython-stubs = [
-    {file = "circuitpython-stubs-2019.5.26.tar.gz", hash = "sha256:ae7b40b34c81b1ab3da8547615124d7c7d67660f35a7571b65643a9d415968d4"},
+    {file = "circuitpython-stubs-7.2.0.tar.gz", hash = "sha256:7fd915b974d2e9c1a72a85ed9790c334eb50a511b9daec420d41d08aa40f4962"},
 ]
 click = [
     {file = "click-8.0.3-py3-none-any.whl", hash = "sha256:353f466495adaeb40b6b5f592f9f91cb22372351c84caeb068132442a4518ef3"},
@@ -284,18 +186,6 @@ pathspec = [
 platformdirs = [
     {file = "platformdirs-2.4.0-py3-none-any.whl", hash = "sha256:8868bbe3c3c80d42f20156f22e7131d2fb321f5bc86a2a345375c6481a67021d"},
     {file = "platformdirs-2.4.0.tar.gz", hash = "sha256:367a5e80b3d04d2428ffa76d33f124cf11e8fff2acdaa9b43d545f5c7d661ef2"},
-]
-pyftdi = [
-    {file = "pyftdi-0.53.3-py3-none-any.whl", hash = "sha256:6e86880ec6d66389de643ca83de5d59fffea3bd334f492e12fab71a832f878a2"},
-    {file = "pyftdi-0.53.3.tar.gz", hash = "sha256:4ef20c246bdb0f278d283337d7a6e69cf9bdb0ead525e7ad867d9e46ad26e613"},
-]
-pyserial = [
-    {file = "pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"},
-    {file = "pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb"},
-]
-pyusb = [
-    {file = "pyusb-1.2.1-py3-none-any.whl", hash = "sha256:2b4c7cb86dbadf044dfb9d3a4ff69fd217013dbe78a792177a3feb172449ea36"},
-    {file = "pyusb-1.2.1.tar.gz", hash = "sha256:a4cc7404a203144754164b8b40994e2849fde1cfff06b08492f12fff9d9de7b9"},
 ]
 regex = [
     {file = "regex-2021.10.8-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:981c786293a3115bc14c103086ae54e5ee50ca57f4c02ce7cf1b60318d1e8072"},
