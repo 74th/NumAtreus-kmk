@@ -1,5 +1,8 @@
+"""
+NumAterus default
+https://github.com/yohewi/qmk_firmware/blob/master/keyboards/numatreus/keymaps/default/keymap.c
+"""
 from kmk.keys import KC
-from kmk.handlers.sequences import simple_key_sequence, send_string
 
 
 quary_layer = 0
@@ -11,6 +14,12 @@ ____ = KC.TRANSPARENT
 def query_keymap():
     raise_m = KC.MO(lower_layer)
     lower_m = KC.MO(raise_layer)
+    """
+    Q      W      E      R      T       ||      Y     U     I     O     P
+    A      S      D      F      G       ||      H     J     K     L     ;
+    Z      X      C      V      B       ||      N     M     ,     .     /
+    SFT    TAB    CTL    LW   space bksp||ALT   Ent   RS    -     '     =
+    """
     left = [
         [KC.Q,      KC.W,       KC.E,       KC.R,       KC.T],
         [KC.A,      KC.S,       KC.D,       KC.F,       KC.G],
@@ -26,6 +35,12 @@ def query_keymap():
     return [left, right]
 
 def lower_keymap():
+    """
+     1      2       3     4     5       ||      6    7     8     9     0
+    F1     F2      F3    F4    F5       ||     F6   F7    F8    F9    F10
+    F11    F12      (     )     &       ||      `    [     ]     +     \
+    lower  insert super shift space bksp|| alt Ent  fn     .     -     =
+    """
     left = [
         [KC.EXLM,   KC.AT,      KC.HASH,    KC.DLR,     KC.PERC],
         [KC.DEL,    KC.ESC,     ____,       ____,       ____],
@@ -41,6 +56,12 @@ def lower_keymap():
     return [left, right]
 
 def raise_keymap():
+    """
+     !      @     #     $     %        ||       ^      &    *    (     )
+    DEL    ESC                         ||      PGDN  PGUP PSCR
+    CAPS  volup        ENT   reset     ||                       UP
+          voldn  super shift space bspc|| alt  ent        LEFT DOWN  RGHT
+    """
     left = [
         [KC.N1,     KC.N2,      KC.N3,      KC.N4,      KC.N5],
         [KC.F1,     KC.F2,      KC.F3,      KC.F4,      KC.F5],
