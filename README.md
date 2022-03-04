@@ -56,7 +56,7 @@ For Windows, see here. Windows の場合はこちらを参照して下さい。
 
 https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-windows
 
-Press CTRL-C or CTRL-D to reboot CIRCUIT PYTHON. Check the error and correct that part of the error. CTRL-C、CTRL-D を押すと、CIRCUIT PYTHON がリブートします。 エラー内容を確認して、その部分を修正します。
+Press CTRL-C and CTRL-D to reboot CIRCUIT PYTHON. Check the error and correct that part of the error. CTRL-C、CTRL-D を押すと、CIRCUIT PYTHON がリブートします。 エラー内容を確認して、その部分を修正します。
 
 ## Sample keymaps サンプルキーマップ
 
