@@ -1,5 +1,5 @@
 """
-Aterus
+Atreus
 https://atreus.technomancy.us/
 """
 from kmk.keys import KC

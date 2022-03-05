@@ -1,5 +1,5 @@
 """
-NumAterus hdbx
+NumAtreus hdbx
 https://github.com/yohewi/qmk_firmware/blob/master/keyboards/numatreus/keymaps/hdbx/keymap.c
 
 WindowsでJIS配列として認識しているときに、オシャレなUS配列用キーキャップを使うためのキーマップです。

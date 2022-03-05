@@ -1,5 +1,5 @@
 """
-NumAterus default
+NumAtreus default
 https://github.com/yohewi/qmk_firmware/blob/master/keyboards/numatreus/keymaps/default/keymap.c
 """
 from kmk.keys import KC

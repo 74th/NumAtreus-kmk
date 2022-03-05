@@ -1,5 +1,5 @@
 """
-NumAterus default
+NumAtreus default
 https://github.com/yohewi/qmk_firmware/blob/master/keyboards/numatreus/keymaps/default/keymap.c
 
 Each layer gets a name for readability, which is then used in the keymap matrix below.
