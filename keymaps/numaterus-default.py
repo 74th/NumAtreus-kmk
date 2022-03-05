@@ -1,6 +1,11 @@
 """
 NumAterus default
 https://github.com/yohewi/qmk_firmware/blob/master/keyboards/numatreus/keymaps/default/keymap.c
+
+Each layer gets a name for readability, which is then used in the keymap matrix below.
+The underscores don't mean anything - you can have a layer called STUFF or any other name.
+Layer names don't all need to be of the same length, obviously, and you can also skip them
+entirely and just use numbers.
 """
 from kmk.keys import KC
 
@@ -42,16 +47,16 @@ def lower_keymap():
     lower  insert super shift space bksp|| alt Ent  fn     .     -     =
     """
     left = [
-        [KC.EXLM,   KC.AT,      KC.HASH,    KC.DLR,     KC.PERC],
-        [KC.DEL,    KC.ESC,     ____,       ____,       ____],
-        [KC.CAPS,   KC.VOLU,    ____,       KC.ENT,     ____],
-        [____,      KC.VOLD,    KC.LGUI,    KC.LSFT,    KC.SPC,     KC.BSPC],
+        [KC.N1,     KC.N2,      KC.N3,      KC.N4,      KC.N5],
+        [KC.F1,     KC.F2,      KC.F3,      KC.F4,      KC.F5],
+        [KC.F11,    KC.F12,     KC.LPRN,    KC.RPRN,    KC.AMPR],
+        [KC.NO,     KC.INS,     KC.LGUI,    KC.LSFT,    KC.SPC,     KC.BSPC],
     ]
     right = [
-        [           KC.CIRC,    KC.AMPR,    KC.ASTR,    KC.LPRN,    KC.RPRN],
-        [           KC.PGDN,    KC.PGUP,    KC.PSCR,    ____,       ____],
-        [           ____,       ____,       ____,       KC.UP,      ____],
-        [KC.LALT,   KC.ENT,     ____,       KC.LEFT,    KC.DOWN,    KC.RGHT],
+        [           KC.N6,      KC.N7,      KC.N8,      KC.N9,      KC.N0],
+        [           KC.F6,      KC.F7,      KC.F8,      KC.F9,      KC.F10],
+        [           KC.GRV,     KC.LBRC,    KC.RBRC,    KC.PSLS,    KC.BSLS],
+        [KC.LALT,   KC.ENT,     KC.TRNS,    KC.DOT,     KC.PMNS,    KC.EQL],
     ]
     return [left, right]
 
@@ -63,16 +68,16 @@ def raise_keymap():
           voldn  super shift space bspc|| alt  ent        LEFT DOWN  RGHT
     """
     left = [
-        [KC.N1,     KC.N2,      KC.N3,      KC.N4,      KC.N5],
-        [KC.F1,     KC.F2,      KC.F3,      KC.F4,      KC.F5],
-        [KC.F11,    KC.F12,     KC.LPRN,    KC.RPRN,    KC.AMPR],
-        [KC.NO,     KC.INS,     KC.LGUI,    KC.LSFT,    KC.SPC,     KC.BSPC],
+        [KC.EXLM,   KC.AT,      KC.HASH,    KC.DLR,     KC.PERC],
+        [KC.DEL,    KC.ESC,     ____,       ____,       ____],
+        [KC.CAPS,   KC.VOLU,    ____,       KC.ENT,     ____],
+        [____,      KC.VOLD,    KC.LGUI,    KC.LSFT,    KC.SPC,     KC.BSPC],
     ]
     right = [
-        [           KC.N6,      KC.N7,      KC.N8,      KC.N9,      KC.N0],
-        [           KC.F6,      KC.F7,      KC.F8,      KC.F9,      KC.F10],
-        [           KC.GRV,     KC.LBRC,    KC.RBRC,    KC.PSLS,    KC.BSLS],
-        [KC.LALT,   KC.ENT,     KC.TRNS,    KC.DOT,     KC.PMNS,    KC.EQL],
+        [           KC.CIRC,    KC.AMPR,    KC.ASTR,    KC.LPRN,    KC.RPRN],
+        [           KC.PGDN,    KC.PGUP,    KC.PSCR,    ____,       ____],
+        [           ____,       ____,       ____,       KC.UP,      ____],
+        [KC.LALT,   KC.ENT,     ____,       KC.LEFT,    KC.DOWN,    KC.RGHT],
     ]
     return [left, right]
 
