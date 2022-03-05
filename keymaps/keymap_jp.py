@@ -1,3 +1,6 @@
+# 組み込みの kmk_firmware/kmk/extensions/keymap_extras/keymap_jp.py は
+# 既存の BSLS を破壊してしまうため、JP用にこちらを使う
+
 # original
 # https://github.com/qmk/qmk_firmware/blob/master/quantum/keymap_extras/keymap_jp.h
 from kmk.keys import KC
