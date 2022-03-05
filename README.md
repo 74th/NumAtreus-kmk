@@ -63,4 +63,5 @@ Press CTRL-C and CTRL-D to reboot CIRCUIT PYTHON. Check the error and fix the er
 Rename the following file keymap.py and place it in CIRCUITPY. 以下のファイルを keymap.py というファイル名に変えて CIRCUITPY の中に入れて下さい。
 
 - [./keymaps/numaterus-default.py](./keymaps/numaterus-default.py) NumAterus default keymap
-- [./keymaps/aterus.py](./keymaps/aterus.py) Aterus official Keymaps
+- [./keymaps/numaterus-hdbx.py](./keymaps/numaterus-hdbx.py) NumAterus hdbx keymap
+- [./keymaps/aterus.py](./keymaps/aterus.py) Aterus official Keymap
